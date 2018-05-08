@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/lapkiss"
+        tools:context="com.iomis.gogavproject.Main2Activity">
+
+
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            >
+
+
+        <TextView
+                android:text="Ви займаєтесь спортом ?"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:id="@+id/tv"
+                android:layout_alignParentTop="true" android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" android:textSize="20sp"
+                android:background="@color/Violet"
+
+                android:textColor="?attr/actionMenuTextColor" android:textStyle="bold"/>
+        <TextView
+                android:text="Так, я люблю спорт"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="89dp"
+                android:background="@color/Violet"
+                android:textColor="?attr/actionMenuTextColor" android:textStyle="bold"
+                android:id="@+id/Answer1" android:textSize="18sp"
+                android:layout_below="@+id/tv" android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"/>
+        <TextView
+                android:text="Ні, я не займаюсь спортом"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:layout_below="@+id/Answer1"
+                android:layout_alignLeft="@+id/Answer1" android:layout_alignStart="@+id/Answer1"
+                android:layout_marginTop="55dp" android:id="@+id/Answer4"
+                android:textColor="?attr/actionMenuTextColor" android:textStyle="bold"
+                android:background="@color/Violet"
+
+                android:textSize="18sp"/>
+
+        <Button
+                android:text="Далі"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true" android:layout_alignParentEnd="true"
+                android:layout_marginRight="16dp" android:layout_marginEnd="16dp" android:layout_marginBottom="22dp"
+                android:background="@drawable/nextbtn"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:id="@+id/nextbtn" android:textSize="12sp"/>
+        <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/answer"
+                android:layout_alignTop="@+id/Answer1" android:layout_alignLeft="@+id/nextbtn"
+                android:layout_alignStart="@+id/nextbtn">
+
+            <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/AnswerYes"
+
+            />
+
+            <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/AnswerNo"
+                    android:layout_marginTop="40dp"
+
+            />
+        </RadioGroup>
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

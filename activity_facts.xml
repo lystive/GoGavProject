@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.iomis.gogavproject.FactsActivity">
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+
+    <TextView
+            android:text="Більшість кінологів  рекомендують брати на виховання маленького цуценя.
+            Передбачаються очевидні труднощі з вирощуванням і вихованням, однак виникає тверда впевненість
+             у вихованні і вдачу вихованця. Окремі люди вважають за краще брати вже дорослу собаку, щоб уникнути
+              неприємностей зростання, метушні з щепленнями, дитячими хворобами."
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:id="@+id/tv"
+            android:gravity="center"
+            android:layout_alignParentTop="true" android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" android:textSize="24sp"
+            android:background="@color/Violet"
+
+            android:textColor="?attr/actionMenuTextColor" android:textStyle="bold"/>
+</RelativeLayout>
+</android.support.constraint.ConstraintLayout>
